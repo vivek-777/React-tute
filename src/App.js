@@ -1,7 +1,7 @@
 /* eslint-disable*/
-import React, { Suspense } from 'react';
-import  { Provider } from 'react-redux'
-import RegularComponent from './components/PureComponent/RegularComponent';
+import React, { Suspense } from "react";
+import { Provider } from "react-redux";
+import RegularComponent from "./components/PureComponent/RegularComponent";
 // import { Routes, Route } from 'react-router-dom';
 // import Provider from 'redux';
 // import Home from './components/Routing/Home';
@@ -46,58 +46,57 @@ import RegularComponent from './components/PureComponent/RegularComponent';
 // import ReducerContext from './components/useReducerHook/useReducerWithUseContext/ReducerContext';
 // import FetchingData from './components/useReducerHook/FetchingData';
 // import Test from './components/Test';
-import IceCreamComponent from './components/Redux/IceCreamComponent';
+import IceCreamComponent from "./components/Redux/IceCreamComponent";
 // import GrandParent from './components/ReactRender/SameElemRef/GrandParent';
 // import CounterOne from './components/useReducerHook/CounterOne';
 // import CounterTwo from './components/useReducerHook/CounterTwo';
-import store from './components/Redux/store';
+import store from "./components/Redux/store";
 // const LazyAbout = (React.lazy(()=>import('./components/Routing/About')));
 // import './App.css';
 
 function App() {
   return (
     <Provider store={store}>
-        <div className="App">
-          {/* <Router> */}
-              {/* <Route exact path="/" component={ParentComponent}/> */}
-              {/* <Route exact path="" component={}/> */}
-            {/* <ParentComponent/> */}
-            {/* <ReactDomRender /> */}
-          {/* </Router> */}
-          {/* <RefsDemo />
+      <div className="App">
+        {/* <Router> */}
+        {/* <Route exact path="/" component={ParentComponent}/> */}
+        {/* <Route exact path="" component={}/> */}
+        {/* <ParentComponent/> */}
+        {/* <ReactDomRender /> */}
+        {/* </Router> */}
+        {/* <RefsDemo />
           <FocusInput/>
           <FRParentInput /> */}
-          {/* <PortalDemo /> */}
-          {/* <Parent/> */}
-          {/* <ClickCounter />
+        {/* <PortalDemo /> */}
+        {/* <Parent/> */}
+        {/* <ClickCounter />
           <HoverCounter /> */}
-          {/* <LibraryVsFramework /> */}
-          {/* <EventBind /> */}
-          {/* <List /> */}
-          {/* <FunctionalComponent /> */}
-          {/* <LifeCycleA /> */}
-          
-          {/* <Counter render={(count, clickHandler) => <ClickCounterTwo count={count} clickHandler={clickHandler}/>}/>
+        {/* <LibraryVsFramework /> */}
+        {/* <EventBind /> */}
+        {/* <List /> */}
+        {/* <FunctionalComponent /> */}
+        {/* <LifeCycleA /> */}
+
+        {/* <Counter render={(count, clickHandler) => <ClickCounterTwo count={count} clickHandler={clickHandler}/>}/>
           <Counter render={(count, clickHandler) => <HoverText count={count} clickHandler={clickHandler}/> }/> */}
 
-          {/* <UserProvider value= "vishwas" >
+        {/* <UserProvider value= "vishwas" >
             <ComponentA />
           </UserProvider> */}
-          {/* <ParentComponent /> */}
-          {/* <Counter /> */}
-          {/* <InfiniteScroll /> */}
+        {/* <ParentComponent /> */}
+        {/* <Counter /> */}
+        {/* <InfiniteScroll /> */}
 
-          {/* <GrandParent /> */}
+        {/* <GrandParent /> */}
 
-          {/* <CounterOne /> */}
-          {/* <CounterTwo/> */}
-          {/* <CounterThree/> */}
-          {/* <ReducerContext /> */}
-          {/* <FetchingData /> */}
-          {/* <RegularComponent/> */}
+        {/* <CounterOne /> */}
+        {/* <CounterTwo/> */}
+        {/* <CounterThree/> */}
+        {/* <ReducerContext /> */}
+        {/* <FetchingData /> */}
+        {/* <RegularComponent/> */}
 
-
-          {/* <AuthProvider>
+        {/* <AuthProvider>
             <Navbar />
             <Routes>
               <Route path='/' element={<Home/>} />
@@ -123,9 +122,9 @@ function App() {
             </Routes>
           </AuthProvider> */}
 
-          {/* <Test /> */}
-          <IceCreamComponent />
-        </div>
+        {/* <Test /> */}
+        <IceCreamComponent />
+      </div>
     </Provider>
   );
 }
