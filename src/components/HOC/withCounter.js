@@ -1,3 +1,22 @@
+import React, { useState } from "react";
+
+const withCounter = (WrappedComponent, incrementCount) => {
+  return (props) => {
+    const [count, setCount] = useState(0);
+  
+    const incrementCounter = () => {
+      setCount(count + incrementCount);
+    };
+    console.log(WrappedComponent)
+  
+    return <WrappedComponent incrementCounter={incrementCounter} count={count} {...props} />
+  }
+}
+
+export default withCounter;
+
+/*
+
 import React, { Component } from 'react'
 
 const withCounter = (WrappedComponent, incrementNumber) => {
@@ -30,3 +49,5 @@ const withCounter = (WrappedComponent, incrementNumber) => {
 }
 
 export default withCounter;
+
+*/

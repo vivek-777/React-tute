@@ -1,3 +1,15 @@
+import React from "react";
+import withCounter from "./withCounter";
+
+const ClickCounter = ({count, incrementCounter, name}) => {
+  return <button onClick={incrementCounter}>Clicked {count} times {name}</button>
+}
+
+export default withCounter(ClickCounter, 5);
+
+// Using Class Component
+
+/*
 import React, { Component } from 'react';
 import withCounter from './withCounter';
 
@@ -11,3 +23,4 @@ class ClickCounter extends Component {
 }
 
 export default withCounter(ClickCounter, 5);
+*/
