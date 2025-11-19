@@ -15,9 +15,9 @@ const Counter = () => {
 
   const CheckEven = useMemo(() => {
     let i = 0;
-    while (i<2000000000) i++
-    return (counterOne%2 === 0 ? 'Even' : 'Odd');
-  },[counterOne]);
+    while(i < 200000000) i++;
+    return counterOne % 2 === 0 ? ' Even': ' Odd'
+  }, [counterOne]);
 
   return (
     <>

@@ -15,11 +15,13 @@ import RegularComponent from "./components/PureComponent/RegularComponent";
 // import User from './components/Routing/User';
 // import Admin from './components/Routing/Admin';
 // import UserDetails from './components/Routing/UserDetails';
-// import InfiniteScroll from './components/InfiniteScroll/InfiniteScroll';
+import InfiniteScroll from './components/InfiniteScroll/InfiniteScroll';
+import TimerApp from "./components/Examples/TimerApp";
+import Pagination from "./components/Examples/Pagination";
 // import ComponentA from './components/Context/ComponentA';
 // import { UserProvider } from './components/Context/userContext';
 // import ParentComponent from './components/useCallback/ParentComponent';
-// import Counter from './components/useMemoHook/Counter';
+import Counter from './components/useMemoHook/Counter';
 // import LifeCycleA from './components/ClassLifecycle/LifeCycleA';
 // import ClickCounterTwo from './components/RenderProps/ClickCounterTwo';
 // import Counter from './components/RenderProps/Counter';
@@ -46,17 +48,17 @@ import RegularComponent from "./components/PureComponent/RegularComponent";
 // import ReducerContext from './components/useReducerHook/useReducerWithUseContext/ReducerContext';
 // import FetchingData from './components/useReducerHook/FetchingData';
 // import Test from './components/Test';
-import IceCreamComponent from "./components/Redux/IceCreamComponent";
+// import IceCreamComponent from "./components/Redux/IceCreamComponent";
 // import GrandParent from './components/ReactRender/SameElemRef/GrandParent';
 // import CounterOne from './components/useReducerHook/CounterOne';
 // import CounterTwo from './components/useReducerHook/CounterTwo';
-import store from "./components/Redux/store";
+// import store from "./components/Redux/store";
 // const LazyAbout = (React.lazy(()=>import('./components/Routing/About')));
 // import './App.css';
 
 function App() {
   return (
-    <Provider store={store}>
+    // <Provider store={store}>
       <div className="App">
         {/* <Router> */}
         {/* <Route exact path="/" component={ParentComponent}/> */}
@@ -84,7 +86,7 @@ function App() {
             <ComponentA />
           </UserProvider> */}
         {/* <ParentComponent /> */}
-        {/* <Counter /> */}
+        <Counter />
         {/* <InfiniteScroll /> */}
 
         {/* <GrandParent /> */}
@@ -123,9 +125,11 @@ function App() {
           </AuthProvider> */}
 
         {/* <Test /> */}
-        <IceCreamComponent />
+        {/* <IceCreamComponent /> */}
+        {/* <TimerApp /> */}
+        {/* <Pagination /> */}
       </div>
-    </Provider>
+    // </Provider>
   );
 }
 

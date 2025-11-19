@@ -1,7 +1,7 @@
 import React, { useState, useRef, useCallback } from 'react'
 import useBookSearch from './useBookSearch'
 
-export default function App() {
+export default function InfiniteScroll() {
   const [query, setQuery] = useState('')
   const [pageNumber, setPageNumber] = useState(1)
 
@@ -19,7 +19,7 @@ export default function App() {
     })
     if (node) observer.current.observe(node)
   }, [loading, hasMore])
-  
+
   function handleSearch(e) {
     setQuery(e.target.value)
     setPageNumber(1)

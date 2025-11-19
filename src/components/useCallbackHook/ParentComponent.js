@@ -23,7 +23,6 @@ function ParentComponent() {
       <Button changeValue = {incrementAge}>Increment Age</Button>
       <Count text={'Salary'} value={salary} />
       <Button changeValue = {incrementSalary}>Increment Salary</Button>
-      <img src={useCallBack} alt='useCallback'/>
     </>
   );
 }

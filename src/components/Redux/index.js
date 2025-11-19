@@ -30,6 +30,6 @@ const rootReducer = combineReducers({
 })
 
 const store = createStore(rootReducer);
-const unsubscribe = store.subscribe(()=>console.log("updated state",store.getState()))
-store.dispatch(buyCake())
-unsubscribe();
+// const unsubscribe = store.subscribe(()=>console.log("updated state",store.getState()))
+// store.dispatch(buyCake())
+// unsubscribe();
